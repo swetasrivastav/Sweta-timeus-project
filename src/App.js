@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './Component/Navbar'
+import Inspirations from './Component/Inspirations'
+import Inspire from './Component/Inspire'
+import Leaveamark from './Component/Leaveamark'
+import Yourdreams from './Component/Yourdreams'
+import Movement from './Component/Movement'
+import Product from './Component/Product'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+  
+    <div className='bg-[#05141f] h-full'>
+      <Navbar/>
+      <Inspirations/>
+      <Inspire/>
+      <Leaveamark/>
+      <Yourdreams/>
+      <Movement/>
+      <Product/>
     </div>
-  );
+   
+    </>
+  )
 }
 
-export default App;
+export default App
